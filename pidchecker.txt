@@ -1,1 +1,0 @@
-"python.exe","996","Console","2","86,952 K","Running","DESKTOP-G5GSDKD\prana","0:00:01","hellofromwin64py"

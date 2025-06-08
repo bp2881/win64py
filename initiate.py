@@ -1,7 +1,6 @@
 #!/usr/bin python
 # -*- coding: utf-8 -*-
 
-import speech_recognition as sr
 import sys, os
 import numpy  
 assert numpy  
