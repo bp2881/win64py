@@ -1,0 +1,7 @@
+
+## Environment
+win64py/*
+
+## Cache and Temp files
+__pycache__/*
+test.py
