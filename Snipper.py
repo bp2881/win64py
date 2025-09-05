@@ -168,7 +168,7 @@ class Menu(QMainWindow):
             self.snippingTool.start()
 
     def save_file(self):
-        pictures_folder = str(Path.home() / "Pictures")
+        pictures_folder = str(Path.home() / "Pictures/temp")
         try:
             os.makedirs(pictures_folder, exist_ok=True)
         except Exception:
@@ -316,9 +316,6 @@ class Snip:
 
     @staticmethod
     def Snip_only():  
-        temp_path = "temp.png"
-        c = pyautogui.screenshot()
-        c.save(temp_path)
         app = QApplication(sys.argv) 
         app.setQuitOnLastWindowClosed(False)
         app.setStyleSheet(stylesheet)
@@ -327,14 +324,7 @@ class Snip:
         window2hello.showFullScreen()
         window = MyWidget()
         window.show()
-        try:
-            app.exec_()
-        finally:
-            try:
-                if os.path.exists(temp_path):
-                    os.remove(temp_path)
-            except Exception:
-                pass
+        app.exec_()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
